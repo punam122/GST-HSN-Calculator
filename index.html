@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST-HSN Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- In your HTML <head> -->
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+
+            <div class="logo">
+                <img src="images/Logo.png " alt="">
+            </div>
+
+            <div class="HSN">
+
+                <a href="HSN.html">
+                    <h2>HSN Finder</h2>
+                </a>
+
+            </div>
+            <a href="#" class="mobile">&#9776;</a>
+
+        </nav>
+    </div>
+    <div class="container">
+        <div class="GST-Calculator">
+            <h2>voice gst calculator</h2>
+            <p>Speak your calculations and get instant results</p>
+        </div>
+        <div class="box">
+            <div class="inner-box">
+                <div class="dropdown">
+                    <div class="select1">
+                        <label for="inputlanguage">Input Language</label>
+                        <select id="inputlanguage">
+                            <option value="english-uk">English UK</option>
+                            <option value="english">english</option>
+                            <option value="hindi">hindi</option>
+                            <option value="marathi">Marathi</option>
+                        </select>
+                    </div>
+
+
+                  
+
+
+                    <div class="select1">
+                         <label for="taxcountry">Tax Country</label>
+                        <select  id="taxcountry">
+                            <option value="india">India</option>
+                            <option value="america">America</option>
+                            <option value="australia">Australia</option>
+                            <option value="afganistan">Afganistan</option>
+                        </select>
+                    </div>
+
+
+                    <div class="select1">
+                         <label for="taxtype">Tax type</label>
+                      
+                        <select id="taxtype">
+                            <option value="18">GST(18%)</option>
+                            <option value="20">GST(20%)</option>
+                            <option value="25">GST(25%)</option>
+                            <option value="30">GST(30%)</option>
+                        </select>
+                    </div>
+
+
+                    <div class="select2">
+                        <label for="currency">Currency</label>
+                        <select id="currency">
+                            <option value="inr">INR</option>
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="gbp">GBP</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="Talk-to-cilo" id="talkToCilo">
+                    <div id="ciloButton">
+                        <img src="images/Cilo.png" alt="Cilo" id="ciloImage">
+                    </div>
+                    <p id="ciloText">Click to start recording</p>
+                    <p id="gstResultText"></p>
+
+                </div>
+
+
+
+
+
+
+                <div class="Transcript">
+                    <h3 style="padding-bottom: 15px;">Live Transcript</h3>
+                    <p>Click on mic and say something like:
+                        "Calculate 18% gst of ₹50,000" or “Add ₹500+₹35,000 and apply 18% tax to it"</p>
+                </div>
+
+
+            </div>
+
+            <div class="box1">
+                <label for="amountInput">Amount (₹)</label>
+                <input type="number" id="amountInput" placeholder="Enter Your Amount" />
+
+                <div class="results">
+                    <p style="font-size: 22px;padding-bottom: 20px;  font-family: 'At Hauss Std', sans-serif;">Your
+                        Total Amount:<br> <span id="totalAmount">₹0.00</span></p>
+                    <hr>
+                    <p
+                        style="font-size: 22px; padding-top: 20px; display: flex;justify-content: space-between;  font-family: 'At Hauss Std', sans-serif;">
+                        Base
+                        Amount: <span id="baseAmount">₹0.00</span></p>
+                    <p
+                        style="font-size: 22px; display: flex; justify-content: space-between;  font-family: 'At Hauss Std', sans-serif;">
+                        Tax Amount: <span id="taxAmount">₹0.00</span></p>
+                </div>
+
+                <div class="buttons">
+                    <button onclick="speakResults()"><i class="fas fa-volume-up"></i>
+                        Speak Results</button>
+                    <button onclick="clearResults()" id="Clear">Clear Results</button>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
