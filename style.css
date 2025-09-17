@@ -343,7 +343,7 @@ label {
   background-color: white;
   color: #007BFF;
   border: none;
-  padding: 16px 25px;
+  padding: 16px 18px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
@@ -810,5 +810,6 @@ flex-wrap: wrap;
 
 
 }
+
 
 
