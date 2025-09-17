@@ -148,7 +148,7 @@ align-items: stretch;
 .search-box {
   background-color: white;
   width: 48%;
-  padding: 70px 30px 20px 30px;
+  padding: 70px 30px 17px 30px;
   border-radius: 20px;
 
 
@@ -807,5 +807,6 @@ flex-wrap: wrap;
     width: 100%;
   }
   
+
 
 }
