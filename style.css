@@ -139,8 +139,7 @@ align-items: stretch;
   width: 40%;
   padding: 30px;
   border-radius: 20px;
- height: 100vh;
- height: 61vh;
+
   margin-right: 30px;
 
 
@@ -810,5 +809,6 @@ flex-wrap: wrap;
     width: 100%;
   }
   
+
 
 }
