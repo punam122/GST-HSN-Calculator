@@ -85,7 +85,7 @@ nav {
   gap: 2rem;
   padding: 90px 0 0px 30px;
   width: 85%;
-  height: 80vh;
+  height: 100vh;
   margin: 60px auto;
 
 
@@ -140,7 +140,7 @@ nav {
   padding: 30px;
   border-radius: 20px;
  
- height: 61vh;
+ height: 100vh;
   margin-right: 30px;
 
 
@@ -811,5 +811,6 @@ flex-wrap: wrap;
     width: 100%;
   }
   
+
 
 }
